@@ -30,7 +30,9 @@ allLinks.forEach((link) => {
         behavior: "smooth",
       });
     } 
-    else return;
+    else {
+      window.location.href = href;
+    }
 
     if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
