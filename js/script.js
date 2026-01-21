@@ -1,4 +1,4 @@
-// currrent year in copyright
+// current year in copyright
 document.querySelector(".copyright-year").textContent =
   new Date().getFullYear();
 
@@ -13,7 +13,6 @@ mobileNavBtnEl.addEventListener("click", (e) => {
 });
 
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -25,12 +24,13 @@ allLinks.forEach((link) => {
         behavior: "smooth",
       });
     }
-    if (href !== "#" && href.startsWith("#")) {
+    else if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({
         behavior: "smooth",
       });
-    }
+    } 
+    else return;
 
     if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
