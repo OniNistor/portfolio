@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onisim Nistor &#9472; Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img
+          class="logo"
+          src="images/oni-logo-blublk.png"
+          alt="Onisim Nistor minimalist logo in blue and black"
+      /></a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-btn">
+        <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Hey there, I'm <span class="hero-name">Oni</span>
+            </h1>
+            <p class="hero-text">
+              Aspiring software engineer and web developer
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="section-about" id="about">
+      <div class="container about">
+        <div class="about-img-box">
+          <img
+            class="about-img"
+            src="images/self/self-2.jpg"
+            alt="Portrait
+          photo of me"
+          />
+        </div>
+        <div class="about-text-box">
+          <p class="subheading">&#9472; About &#9472;</p>
+          <h2 class="heading-secondary">Nice to meet you!</h2>
+          <p class="about-text">
+            I'm a self-taught web developer born and raised in Georgia, with
+            experience living and working in Japan. My time abroad shaped how
+            I approach problem-solving, communication, and thoughtful design. I
+            enjoy building interactive, user-focused web projects and
+            continuously improving my skills through hands-on learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-portfolio" id="portfolio">
+      <div>
+        <p class="subheading">&#9472; Portfolio &#9472;</p>
+        <h2 class="heading-secondary">Some projects I've worked on</h2>
+      </div>
+      <div class="container grid grid--2-cols">
+        <div class="project-card">
+          <a href="https://omnifood-oni.netlify.app/" class="card-link">
+            <img
+              class="card-img"
+              src="images/projects/project-omnifood.png"
+              alt="Screenshot of Omnifood website"
+            />
+            <div class="card-content">
+              <p class="card-title">Omnifood</p>
+              <p class="card-description">
+                Website made to practice conventional front-end fundamentals
+                including design techniques and responsiveness. Site features an
+                imaginative AI-aided meal plan subscription service.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="https://sentence-game.onrender.com/" class="card-link">
+            <img
+              class="card-img"
+              src="images/projects/project-sentence.png"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Sentence Game</p>
+              <p class="card-description">
+                Multiplayer game site where users can choose a screen name, join
+                a private room and play a simple-to-learn game with others in
+                real time to build silly sentences. At the end, players get to
+                share completed sentences and generated images.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="https://mapty-oni.netlify.app/" class="card-link">
+            <img
+              class="card-img"
+              src="images/projects/project-mapty.png"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Mapty</p>
+              <p class="card-description">
+                Site to track running or cycling workouts by placing pins on an
+                interactive and live map based on the user's location. Recorded
+                workouts will be stored in an easy-to-view list for the user's
+                history and convenience.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="https://forkify-oni.netlify.app/" class="card-link">
+            <img
+              class="card-img"
+              src="images/projects/project-forkify.png"
+              alt=""
+            />
+            <div class="card-content">
+              <p class="card-title">Forkify</p>
+              <p class="card-description">
+                A site for finding recipes easily. Users can input ingredients
+                into a search bar and associated recipes will be loaded for the
+                user to browse. Users can bookmark recipes and also adjust
+                portion size.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-text-box">
+          <p class="subheading">&#9472; Contact &#9472;</p>
+          <h2 class="heading-secondary">Feel free to reach out</h2>
+          <p class="contact-text">Whether it's constructive feedback or thoughtful suggestions, I'm always open to hearing your insight.</p>
+        </div>
+        <form class="contact-form" name="contact" netlify>
+          <div>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="John Doe"
+            name="full-name"
+            required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="johndoe@email.com"
+            name="email"
+            required>
+          </div>
+          <div>
+            <label for="feedback">Message</label>
+            <textarea name="feedback" id="feedback" type="text" placeholder="Write your feedback" required></textarea>
+          </div>
+
+          <button class="btn--contact-form">Let's Connect
+          </button>
+        </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer grid--footer">
+      <div>
+        <a href="#"
+          ><img
+            class="logo"
+            src="images/oni-logo-blublk.png"
+            alt="Onisim Nistor minimalist logo in blue and black"
+        /></a>
+      </div>
+      <p class="copyright">
+        &copy; <span class="copyright-year"></span> Onisim Nistor | All rights
+        reserved.
+      </p>
+
+      <nav class="social-nav">
+        <ul class="social-nav-list">
+          <li class="social-nav-link">
+            <a href="https://www.linkedin.com/in/onisim-nistor-1933a2241/"
+              ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li class="social-nav-link">
+            <a href="https://github.com/OniNistor"
+              ><ion-icon class="social-icon" name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <!-- <li class="social-nav-link">
+            <a href="#"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li> -->
+        </ul>
+      </nav>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
